@@ -2,9 +2,9 @@ import React, { useState } from 'react'
 
 export default function Component() {
 
-    // Constante que se usan para utilizar el (useState) estados a un componenete, el cual consta de un array con dos elementos: El estado actua y La función set.
-    const [text, setText] = useState();
-    const [update, setUpdate] = useState();
+    // Constante que se usan para utilizar el (useState) estados a un componenete, el cual consta de un array con dos elementos: El estado actua y La función set. Se inicializa el useState(''), para no generar errores.
+    const [text, setText] = useState('');
+    const [update, setUpdate] = useState('');
 
     // Creamos las funciones del set, te permite actualizar el estado a un valor diferente y desencadenar un nuevo renderizado.
     const textOnChange = (event) => {
